@@ -7,8 +7,19 @@
     "build": "nx build",
     "test": "nx test"
   },
+  "workspaces": {
+    "packages": [
+      "apps/**"
+    ],
+    "nohoist": [
+      "**/remix/",
+      "**/remix/**/*"
+    ]
+  },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "devDependencies": {
     "@nrwl/tao": "13.4.3",
     "@nrwl/cli": "13.4.3",

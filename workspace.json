@@ -1,4 +1,16 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "remix": {
+      "root": "apps/remix",
+      "targets": {
+        "dev": {
+          "executor": "@nrwl/workspace:run-script",
+          "options": {
+            "script": "remix dev"
+          }
+        }
+      }
+    }
+  }
 }
